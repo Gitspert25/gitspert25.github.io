@@ -8,15 +8,29 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             text-align: center;
-            padding: 50px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
         }
         h1 {
             color: #007acc;
         }
         p {
             font-size: 1.2em;
+            color: #333;
         }
         a {
             color: #007acc;
@@ -28,9 +42,11 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>Hi there! I'm Gitspert, and this is my awesome GitHub Pages site.</p>
-    <p>Feel free to explore my projects and connect with me!</p>
-    <a href="https://github.com/Gitspert25" target="_blank">Visit my GitHub Profile</a>
+    <div class="card">
+        <h1>Welcome to My GitHub Page!</h1>
+        <p>Hi there! I'm Gitspert, and this is my awesome GitHub Pages site.</p>
+        <p>Feel free to explore my projects and connect with me!</p>
+        <a href="https://github.com/Gitspert25" target="_blank">Visit my GitHub Profile</a>
+    </div>
 </body>
 </html>
